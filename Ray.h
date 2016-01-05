@@ -10,15 +10,21 @@ class Ray {
 		Point3D			o;  	// origin 
 		Vector3D		d; 		// direction 
 		
+
+		//Defualt Constructor
 		Ray(void);			
 		
+		//Constructor
 		Ray(const Point3D& origin, const Vector3D& dir);	
 		
+		//Copy Constructor
 		Ray(const Ray& ray); 		
 		
+		//Assignment Operator
 		Ray& 						
 		operator= (const Ray& rhs);
-		 								
+		 
+		//Destructor							
 		~Ray(void);
 };
 
